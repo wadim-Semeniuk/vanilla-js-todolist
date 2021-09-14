@@ -82,7 +82,6 @@ function renderTask(
 
   doneBtn.addEventListener('click', () => {
     deleteTask(id, isDone, generatedElem, taskGeneratePlace);
-    taskTitle.classList.add('hide');
     changeStatusDone(id, titleText, isDone);
   });
   taskTitle.addEventListener(
