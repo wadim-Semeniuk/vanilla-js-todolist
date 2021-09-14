@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="app" class="tasks">
+        <h2 class="h2">Task list</h2>
+        <div class="inform">
+          <div class="dont-have-tasks">You don't have tasks to do.</div>
+          <div class="all-done-text-icon hide">🎊</div>
+          <div class="all-done-text hide">All Done</div>
+        </div>
+        <div class="task-container"></div>
+
+        <form name="addTask">
+          <input
+            name="title"
+            placeholder="New task..."
+            type="text"
+            class="input"
+          />
+        </form>
+
+        <div class="progress-bar hide">
+          <div class="hr"></div>
+          <div class="stats">
+            <span class="complete">0</span>/
+            <span class="incomplete">0</span>
+            (<span class="percentage">0</span> done)
+          </div>
+        </div>
+        <div class="task-done-container">
+        </div>
+        <button class="show-more">Show more...</button>
+      </div>
+      <div class="modal-delete">
+        <div class="modal-delete-content">
+          <p class="modal-delete-text"></p>
+          <button class="modal-btn yes">Yes</button>
+          <button class="modal-btn no">No</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
